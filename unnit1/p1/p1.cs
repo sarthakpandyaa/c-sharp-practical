@@ -3,7 +3,7 @@ using System;
 class Program
 {
   static void Main()
-  {
+  {20
     Console.Write("Enter a number: ");
     int number = int.Parse(Console.ReadLine());
 
