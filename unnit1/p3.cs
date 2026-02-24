@@ -1,7 +1,6 @@
-// write a program to input principal amount rate and year and display simple interest
 using System;
 
-class SimpleInterest
+class SimpleInterestCalculator
 {
     static void Main()
     {
@@ -12,12 +11,14 @@ class SimpleInterest
         double rate = double.Parse(Console.ReadLine());
         
         Console.Write("Enter Time Period (years): ");
-        double years = double.Parse(Console.ReadLine());
+        double time = double.Parse(Console.ReadLine());
         
-        double simpleInterest = (principal * rate * years) / 100;
+        double simpleInterest = (principal * rate * time) / 100;
         double totalAmount = principal + simpleInterest;
         
-        Console.WriteLine($"\nSimple Interest: {simpleInterest}");
+        Console.WriteLine("\n--- Results ---");
+        Console.WriteLine($"Principal: {principal}");
+        Console.WriteLine($"Simple Interest: {simpleInterest}");
         Console.WriteLine($"Total Amount: {totalAmount}");
     }
 }
